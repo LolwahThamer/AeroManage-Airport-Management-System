@@ -1,0 +1,5 @@
+FL001   ,New York      ,London    ,200   ,50   ,500
+FL002   ,Los Angeles   ,Paris     ,180   ,120   ,600
+FL003   ,London        ,Tokyo     ,220   ,80   ,700
+FL004   ,Paris         ,Sydney    ,250   ,200   ,800
+FL005   ,Tokyo         ,New York  ,210   ,160   ,550
