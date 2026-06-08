@@ -146,20 +146,20 @@ Below are screenshots of the main interfaces. (Replace these placeholders with a
 ## Features
 
 ### 🧳 Passenger Portal
-- 🔍 **Flight search** by origin/destination (case‑insensitive) – uses `LIKE` with `LOWER()` in SQL.
-- 💺 **Real‑time seat availability** – books only if seats remain; atomic update.
-- 🎟️ **Automatic PNR generation** – 6‑character alphanumeric string (e.g., `AB3F9K`).
-- ❌ **Cancel own booking** – restores seat count atomically.
-- 📄 **PNR lookup** – retrieve full booking details (name, flight, date, etc.) from the database.
+- **Flight search** by origin/destination (case‑insensitive) – uses `LIKE` with `LOWER()` in SQL.
+- **Real‑time seat availability** – books only if seats remain; atomic update.
+- **Automatic PNR generation** – 6‑character alphanumeric string (e.g., `AB3F9K`).
+- **Cancel own booking** – restores seat count atomically.
+- **PNR lookup** – retrieve full booking details (name, flight, date, etc.) from the database.
 
 ### 🔒 Security Portal
-- 🚫 **Block passenger** by Civil ID – deletes all existing bookings and inserts into `blocked` table.
-- ✅ **Unblock passenger** – removes from `blocked` table, restores booking ability.
-- 📋 **View all system bookings** – monitor every transaction across all flights.
-- 📜 **Live blocked list** – see currently restricted passengers, updated after each block/unblock.
+- **Block passenger** by Civil ID – deletes all existing bookings and inserts into `blocked` table.
+- **Unblock passenger** – removes from `blocked` table, restores booking ability.
+- **View all system bookings** – monitor every transaction across all flights.
+- **Live blocked list** – see currently restricted passengers, updated after each block/unblock.
 
 ### 👨‍✈️ Flight Staff Portal
-- 📊 **Load report** – list flights with occupancy > 50% (dynamic calculation).
-- 🛫 **Full flight board** – shows total seats, available seats, load percentage, and fare.
-- 👥 **Passenger manifest** – click on any flight to see all booked passengers (PNR, name, age, address, booking time).
-- ❌ **Cancel entire flight** – removes flight and all associated bookings (cascade deletion). This action is irreversible and triggers a confirmation toast.
+- **Load report** – list flights with occupancy > 50% (dynamic calculation).
+- **Full flight board** – shows total seats, available seats, load percentage, and fare.
+- **Passenger manifest** – click on any flight to see all booked passengers (PNR, name, age, address, booking time).
+- **Cancel entire flight** – removes flight and all associated bookings (cascade deletion). This action is irreversible and triggers a confirmation toast.
